@@ -1,0 +1,856 @@
+[student@workstation ~]$ lab-configure
+
+This script configures the connection parameters to access the OpenShift cluster for your lab scripts
+
+ · Enter the API Endpoint: https://api.na46.prod.nextcle.com:6443
+ · Enter the Username: fyxxbf
+ · Enter the Password: 97bb2ba309f242eba04e
+ · Enter the GitHub Account Name: walterpc
+ · Enter the Quay.io Account Name: walterpc
+
+You entered:
+ · API Endpoint:			https://api.na46.prod.nextcle.com:6443
+ · Username:				fyxxbf
+ · Password:				97bb2ba309f242eba04e
+ · GitHub Account Name:			walterpc
+ · Quay.io Account Name:		walterpc
+
+Generated config:
+ · API Endpoint:			https://api.na46.prod.nextcle.com:6443
+ · Wildcard Domain:			apps.na46.prod.nextcle.com
+ · Nexus Server Host:			nexus-common.apps.na46.prod.nextcle.com
+ · Username:				fyxxbf
+ · Password:				97bb2ba309f242eba04e
+ · GitHub Account Name:			walterpc
+ · Quay.io Account Name:		walterpc
+
+Verifying your API Endpoint...
+
+Verifying your Nexus host...
+
+Verifying your OpenShift developer user credentials...
+
+Verifying your GitHub account name...
+
+Verifying your Quay.io account name...
+
+Verifying your cluster configuration...
+
+Saving your lab configuration file...
+
+Saving your Maven settings file...
+
+All fine, lab config saved. You can now proceed with your exercises.
+
+If you need to modify the configuration, rerun this script or directly modify the values in /usr/local/etc/ocp4.config.
+
+
+
+[student@workstation ~]$ lab docker-build start
+
+Checking prerequisites for GE: Deploying an Application to an OpenShift Cluster
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'ubi-echo' exists in student's GitHub fork..........  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-docker-build' is absent.....................  SUCCESS
+
+Setting up the classroom for GE: Deploying an Application to an OpenShift Cluster
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ 
+[student@workstation ~]$ lab deploy-image start
+
+Checking prerequisites for GE: Managing an Application with the Web Console
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Image 'redhattraining/php-hello-dockerfile' is available....  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab build-template start
+
+Checking prerequisites for GE: Managing an Application with the CLI
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'quotes' exists in student's GitHub fork............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-build-template' is absent...................  SUCCESS
+
+Setting up the classroom for GE: Managing an Application with the CLI
+
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$
+
+[student@workstation ~]$ lab source-build start
+
+Checking prerequisites for Lab: Deploying and Managing Applications on an OpenShift Cluster
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'nodejs-helloworld' exists in student's GitHub fork.  SUCCESS
+ · Module 'nodejs' exists in classroom's Nexus.................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-source-build' is absent.....................  SUCCESS
+
+Setting up the classroom for Lab: Deploying and Managing Applications on an OpenShift Cluster
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab container-build start
+
+Checking prerequisites for Guided Exercise: Building Container Images
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Image 'redhattraining/httpd-parent' is available............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-container-build' is absent..................  SUCCESS
+
+Setting up the classroom for Guided Exercise: Building Container Images
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab app-config start
+
+Checking prerequisites for Guided Exercise: Injecting Configuration Data into an Application
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'app-config' exists in student's GitHub fork........  SUCCESS
+ · Module 'nodejs' exists in classroom's Nexus.................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-app-config' is absent.......................  SUCCESS
+
+Setting up the classroom for Guided Exercise: Injecting Configuration Data into an Application
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab design-container start
+
+Checking prerequisites for Lab: Designing Containerized Applications for OpenShift
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'hello-java' exists in student's GitHub fork........  SUCCESS
+ · Check if file 'hello-java.jar' is available.................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-design-container' is absent.................  SUCCESS
+
+Setting up the classroom for Lab: Designing Containerized Applications for OpenShift
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab external-registry start
+
+Checking prerequisites for GE: Using an External Registry
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · OCI container image 'ubi-sleep' is available................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-external-registry' is absent................  SUCCESS
+ Checking for conflicts with existing local containers:
+ · Container 'sleep' is absent.................................  SUCCESS
+
+Setting up the classroom for GE: Using an External Registry
+
+ · Download exercise files.....................................  SUCCESS
+ · Download OCI container image folder 'ubi-sleep'.............  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab expose-registry start
+
+Checking prerequisites for GE: Using the OpenShift Registry
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · OCI container image 'ubi-info' is available.................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-common' is absent...........................  SUCCESS
+ Checking for conflicts with existing local containers:
+ · Container 'info' is absent..................................  SUCCESS
+
+Setting up the classroom for GE: Using the OpenShift Registry
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+ · Download OCI container image folder 'ubi-info'..............  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab image-stream start
+
+Checking prerequisites for GE: Creating an Image Stream
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Image 'redhattraining/hello-world-nginx' is available.......  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-image-stream' is absent.....................  SUCCESS
+ · Project 'fyxxbf-common' is absent...........................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab expose-image start
+
+Checking prerequisites for Lab: Publishing Enterprise Container Images
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · OCI container image 'php-info' is available.................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-expose-image' is absent.....................  SUCCESS
+ · Project 'fyxxbf-common' is absent...........................  SUCCESS
+
+Setting up the classroom for Lab: Publishing Enterprise Container Images
+
+ · Download exercise files.....................................  SUCCESS
+ · Download OCI container image folder 'php-info'..............  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab manage-builds start
+
+Checking prerequisites for GE: Managing Application Builds
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Module 'java' exists in classroom's Nexus...................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-manage-builds' is absent....................  SUCCESS
+
+Setting up the classroom for GE: Managing Application Builds
+
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab trigger-builds start
+
+Checking prerequisites for GE: Triggering Builds
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ · Project 'trigger-builds' exists in student's GitHub fork....  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ · Check if file 'php-73-ubi8-original.tar.gz' is available....  SUCCESS
+ · Check if file 'php-73-ubi8-newer.tar.gz' is available.......  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-trigger-builds' is absent...................  SUCCESS
+
+Setting up the classroom for GE: Triggering Builds
+
+ Downloading required files:
+ · Download exercise files.....................................  SUCCESS
+ · Download php-73-ubi8-original.tar.gz........................  SUCCESS
+ · Download php-73-ubi8-newer.tar.gz...........................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab post-commit start
+
+Checking prerequisites for GE: Implementing Post-Commit Build Hooks
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-post-commit' is absent......................  SUCCESS
+
+Setting up the classroom for GE: Implementing Post-Commit Build Hooks
+
+ Prepare the Guided Exercise
+ · Download exercise files.....................................  SUCCESS
+ · Create the fyxxbf-post-commit project.......................  SUCCESS
+ · Deploy and configure the builds-for-managers application....  SUCCESS
+ · Expose the builds-for-managers application..................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab build-app start
+
+Checking prerequisites for Lab: Building applications
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Module 'nodejs' exists in classroom's Nexus.................  SUCCESS
+ · Project 'build-app' exists in student's GitHub fork.........  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-build-app' is absent........................  SUCCESS
+
+Setting up the classroom for Lab: Building applications
+
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab s2i-scripts start
+
+Checking prerequisites for Guided Exercise: Customizing S2I Builds
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-s2i-scripts' is absent......................  SUCCESS
+ Checking for conflicts with existing local containers:
+ · Container 'test' is absent..................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab apache-s2i start
+
+Checking prerequisites for Guided Exercise: Creating an S2I Builder Image
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ · Project 'html-helloworld' exists in student's GitHub fork...  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-apache-s2i' is absent.......................  SUCCESS
+ Checking for conflicts with existing local containers:
+ · Container 'test' is absent..................................  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+
+Setting up the classroom for Guided Exercise: Creating an S2I Builder Image
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab custom-s2i start
+
+Checking prerequisites for Lab: Customizing Source to Image Builds
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-custom-s2i' is absent.......................  SUCCESS
+ Checking for conflicts with existing local containers:
+ · Container 'info' is absent..................................  SUCCESS
+ · Project 'go-hello' exists in student's GitHub fork..........  SUCCESS
+
+Setting up the classroom for Lab: Customizing Source to Image Builds
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab multicontainer-helm start
+
+Checking prerequisites for GE: Creating a Helm Chart
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-multicontainer-helm' is absent..............  SUCCESS
+
+Setting up the classroom for GE: Creating a Helm Chart
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab multicontainer-kustomize start
+
+Checking prerequisites for GE: Customizing Deployments with Kustomize
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-multicontainer-kustomize' is absent.........  SUCCESS
+
+Setting up the classroom for GE: Customizing Deployments with Kustomize
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab multicontainer-review start
+
+Checking prerequisites for Lab: Deploying Multi-container Applications
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-multicontainer-review' is absent............  SUCCESS
+
+Setting up the classroom for Lab: Deploying Multi-container Applications
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab probes start
+
+Checking prerequisites for Guided Exercise: Activating Probes
+
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-probes' is absent...........................  SUCCESS
+ · Project 'probes' exists in student's GitHub fork............  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+
+Setting up the classroom for Guided Exercise: Activating Probes
+
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab strategy start
+
+Checking prerequisites for Guided Exercise: Implementing a Deployment Strategy
+
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-strategy' is absent.........................  SUCCESS
+ Checking required artifacts:
+ · SQL initialization script users.sql is available............  SUCCESS
+ · Import script import.sh is available........................  SUCCESS
+
+Setting up the classroom for Guided Exercise: Implementing a Deployment Strategy
+
+ Creating the starter project:
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab app-deploy start
+
+Checking prerequisites for GE: Managing Application Deployments
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'quip' exists in student's GitHub fork..............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-app-deploy' is absent.......................  SUCCESS
+
+Setting up the classroom for GE: Managing Application Deployments
+
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab manage-deploy start
+
+Checking prerequisites for Lab: Managing Application Deployments
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-manage-deploy' is absent....................  SUCCESS
+ · Project 'php-scale' exists in student's GitHub fork.........  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab external-service start
+
+Checking prerequisites for GE: Integrating an External Service
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'todo-single' exists in student's GitHub fork.......  SUCCESS
+ · Module 'nodejs' exists in classroom's Nexus.................  SUCCESS
+ · Todo database exists on external MySQL server...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-external-service' is absent.................  SUCCESS
+
+Setting up the classroom for GE: Integrating an External Service
+
+ Deploying the To Do List application:
+ · Download exercise files.....................................  SUCCESS
+ · Create the fyxxbf-external-service project in OpenShift.....  SUCCESS
+ · Build and deploy the application............................  SUCCESS
+ · Expose the application......................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab nexus-service start
+
+Checking prerequisites for GE: Containerizing Nexus as a Service
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-nexus-service' is absent....................  SUCCESS
+ · Project 'nexus3' exists in student's GitHub fork............  SUCCESS
+
+Setting up the classroom for GE: Containerizing Nexus as a Service
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+ · Inserting developer user name and wildcard domain on solutio
+   n values file...............................................  SUCCESS
+SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab micro-java start
+
+Checking prerequisites for GE: Deploying An Application with Red Hat OpenShift Application Runtimes
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-micro-java' is absent.......................  SUCCESS
+
+Setting up the classroom for GE: Deploying An Application with Red Hat OpenShift Application Runtimes
+
+ · Download exercise files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+[student@workstation ~]$ lab todo-migrate start
+
+Checking prerequisites for Lab: Building Applications for OpenShift
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'todo-api' exists in student's GitHub fork..........  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-todo-migrate' is absent.....................  SUCCESS
+
+Setting up the classroom for Lab: Building Applications for OpenShift
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
+[student@workstation ~]$ lab review-todo start
+
+Checking prerequisites for Lab: Comprehensive Review of OpenShift Development II
+
+ Checking local clone of the applications repository:
+ · Folder '/home/student/DO288-apps' is a git repo.............  SUCCESS
+ · Git repo '/home/student/DO288-apps' has no pending changes..  SUCCESS
+ Verifying the OpenShift cluster is running:
+ · Log in on OpenShift.........................................  SUCCESS
+ · Check master node na46-n68gp-master-0 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-1 is ready..............  SUCCESS
+ · Check master node na46-n68gp-master-2 is ready..............  SUCCESS
+ · Check the internal registry is up and running...............  SUCCESS
+ Checking required artifacts:
+ · Project 'todo-frontend' exists in student's GitHub fork.....  SUCCESS
+ · Project 'todo-backend' exists in student's GitHub fork......  SUCCESS
+ · Module 'nodejs' exists in classroom's Nexus.................  SUCCESS
+ Checking for conflicts with existing OpenShift projects:
+ · Project 'fyxxbf-review-todo' is absent......................  SUCCESS
+
+Setting up the classroom for Lab: Comprehensive Review of OpenShift Development II
+
+ · Download exercise files.....................................  SUCCESS
+ · Download solution files.....................................  SUCCESS
+
+Overall start status...........................................  SUCCESS
+
+[student@workstation ~]$ 
+
+
+
